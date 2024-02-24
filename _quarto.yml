@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "icode"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Начини с нуля"
+      - href: ican.qmd
+        text: Я умею!
+      - href: tasks.qmd
+        text: Банк заданий
+      - about.qmd
+
+  sidebar:
+    - title: "Начини с нуля"
+      style: "docked"
+      background: light
+      contents:
+        - icode/hello.qmd
+        - index.qmd
+        - index.qmd
+
+    - title: "Банк заданий"
+      style: "docked"
+      background: light
+      contents:
+        - index.qmd
+        - index.qmd
+        - index.qmd
+
+
+
+format:
+  html:
+    theme: bootswatch
+    css: styles.css
+    toc: true
+
+
+
