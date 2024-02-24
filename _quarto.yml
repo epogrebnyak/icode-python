@@ -7,7 +7,7 @@ website:
     left:
       - href: index.qmd
         text: "Начини с нуля"
-      - href: ican.qmd
+      - href: icode/ican.qmd
         text: Я умею!
       - href: tasks.qmd
         text: Банк заданий
