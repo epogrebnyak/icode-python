@@ -262,7 +262,7 @@ globalThis.qpyodideCustomizedPyodideOptions = {
 }
 
 // Store cell data
-globalThis.qpyodideCellDetails = [{"id":1,"code":"print(\"Hello, world!\")","options":{"message":"true","classes":"","label":"","comment":"","context":"interactive","fig-cap":"","results":"markup","output":"true","read-only":"false","warning":"true","out-height":"","fig-width":7,"autorun":"","dpi":72,"out-width":"700px","fig-height":5}}];
+globalThis.qpyodideCellDetails = [{"code":"print(\"Hello, world!\")","options":{"autorun":"","message":"true","fig-cap":"","context":"interactive","warning":"true","classes":"","out-width":"700px","comment":"","out-height":"","label":"","output":"true","dpi":72,"read-only":"false","fig-height":5,"fig-width":7,"results":"markup"},"id":1}];
 
 
 </script>
@@ -447,7 +447,7 @@ globalThis._qpyodideGetInstance = function() {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Начини с нуля</span></a>
   </li>  
   <li class="nav-item">
@@ -455,11 +455,11 @@ globalThis._qpyodideGetInstance = function() {
 <span class="menu-text">Я умею!</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../tasks.html"> 
+    <a class="nav-link active" href="../tasks.html" aria-current="page"> 
 <span class="menu-text">Банк заданий</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../icode/about.html"> 
 <span class="menu-text">О проекте</span></a>
   </li>  
 </ul>
@@ -473,7 +473,7 @@ globalThis._qpyodideGetInstance = function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../icode/hello.html">Привет. Много приветов😺.</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../icode/hello.html">Привет😺. Много приветов.</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -487,20 +487,14 @@ globalThis._qpyodideGetInstance = function() {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../tasks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Банк заданий</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../icode/hello.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Привет. Много приветов😺.</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mgimo-python</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mgimo-python</span></a>
+ <span class="menu-text">Привет😺. Много приветов.</span></a>
   </div>
 </li>
     </ul>
@@ -513,7 +507,7 @@ globalThis._qpyodideGetInstance = function() {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#привет.-много-приветов." id="toc-привет.-много-приветов." class="nav-link active" data-scroll-target="#привет.-много-приветов.">Привет. Много приветов😺.</a>
+  <li><a href="#привет.-много-приветов." id="toc-привет.-много-приветов." class="nav-link active" data-scroll-target="#привет.-много-приветов.">Привет😺. Много приветов.</a>
   <ul class="collapse">
   <li><a href="#самая-простая-программа-в-мире" id="toc-самая-простая-программа-в-мире" class="nav-link" data-scroll-target="#самая-простая-программа-в-мире">Самая простая программа в мире</a></li>
   <li><a href="#интерактивные-возможности" id="toc-интерактивные-возможности" class="nav-link" data-scroll-target="#интерактивные-возможности">Интерактивные возможности</a></li>
@@ -539,7 +533,7 @@ globalThis._qpyodideGetInstance = function() {
 
 
 <section id="привет.-много-приветов." class="level1">
-<h1>Привет. Много приветов😺.</h1>
+<h1>Привет😺. Много приветов.</h1>
 <section id="самая-простая-программа-в-мире" class="level2">
 <h2 class="anchored" data-anchor-id="самая-простая-программа-в-мире">Самая простая программа в мире</h2>
 <p>Классическим примером короткой программы является “Привет, мир!”. Это программа из одной строки, которая печатает на экран всего одно предложение. На Python эта программа выглядит следующим образом:</p>
@@ -573,15 +567,26 @@ export fn main() void = {
         fmt::println(greetings[i])!;
     };
 };</code></pre>
-<p>Вопросы и задания:</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Вопросы и задания
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
 <li>Как такую программу написать на Python?</li>
-<li>Какие языки для приветствия вы будете использовать?</li>
+<li>Какие иностранные языки для приветствия вы будете использовать?</li>
 <li>Откуда взять официальные обозначения для этих языков?</li>
 <li>Какая структура данных будет использоваться для хранения приветствий?</li>
 <li>Как пользователь сможет выбрать язык, на котором программа напечатает приветствие?</li>
 <li>На скольки языках могут поздороваться с вами студенты МГИМО?</li>
 </ol>
+</div>
+</div>
 
 
 </section>
