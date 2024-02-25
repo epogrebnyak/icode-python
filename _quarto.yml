@@ -10,27 +10,16 @@ website:
       - href: icode/ican.qmd
         text: Я умею!
       - href: tasks.qmd
-        text: Банк заданий
-      - about.qmd
+        text: "Банк заданий"
+      - icode/about.qmd
 
   sidebar:
-    - title: "Начини с нуля"
-      style: "docked"
-      background: light
-      contents:
-        - icode/hello.qmd
-        - index.qmd
-        - index.qmd
-
     - title: "Банк заданий"
       style: "docked"
       background: light
       contents:
-        - index.qmd
-        - index.qmd
-        - index.qmd
-
-
+        - tasks.qmd
+        - icode/hello.qmd
 
 format:
   html:
