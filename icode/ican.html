@@ -124,11 +124,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#среда-программирования" id="toc-среда-программирования" class="nav-link" data-scroll-target="#среда-программирования">Среда программирования</a></li>
   <li><a href="#алгоритмизация" id="toc-алгоритмизация" class="nav-link" data-scroll-target="#алгоритмизация">Алгоритмизация</a></li>
-  <li><a href="#значения-типы-переменные" id="toc-значения-типы-переменные" class="nav-link" data-scroll-target="#значения-типы-переменные">Значения, типы, переменные</a></li>
-  <li><a href="#ход-исполнения-программы" id="toc-ход-исполнения-программы" class="nav-link" data-scroll-target="#ход-исполнения-программы">Ход исполнения программы</a></li>
-  <li><a href="#ввод-и-вывод" id="toc-ввод-и-вывод" class="nav-link" data-scroll-target="#ввод-и-вывод">Ввод и вывод</a></li>
+  <li><a href="#значения-типы-данных-переменные" id="toc-значения-типы-данных-переменные" class="nav-link" data-scroll-target="#значения-типы-данных-переменные">Значения, типы данных, переменные</a></li>
+  <li><a href="#ход-исполнения-программы-control-flow" id="toc-ход-исполнения-программы-control-flow" class="nav-link" data-scroll-target="#ход-исполнения-программы-control-flow">Ход исполнения программы (control flow)</a></li>
+  <li><a href="#ввод-и-вывод-input-output" id="toc-ввод-и-вывод-input-output" class="nav-link" data-scroll-target="#ввод-и-вывод-input-output">Ввод и вывод (input-output)</a></li>
   <li><a href="#функции-классы-пакеты" id="toc-функции-классы-пакеты" class="nav-link" data-scroll-target="#функции-классы-пакеты">Функции, классы, пакеты</a></li>
-  <li><a href="#коммуникации" id="toc-коммуникации" class="nav-link" data-scroll-target="#коммуникации">Коммуникации</a></li>
+  <li><a href="#коммуникации-и-качество-кода" id="toc-коммуникации-и-качество-кода" class="nav-link" data-scroll-target="#коммуникации-и-качество-кода">Коммуникации и качество кода</a></li>
+  <li><a href="#дополнительные-темы" id="toc-дополнительные-темы" class="nav-link" data-scroll-target="#дополнительные-темы">Дополнительные темы</a></li>
   <li><a href="#настрой-настоящего-программиста" id="toc-настрой-настоящего-программиста" class="nav-link" data-scroll-target="#настрой-настоящего-программиста">Настрой настоящего программиста</a></li>
   </ul></li>
   </ul>
@@ -147,90 +148,167 @@ ul.task-list li input[type="checkbox"] {
 <section id="среда-программирования" class="level2">
 <h2 class="anchored" data-anchor-id="среда-программирования">Среда программирования</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Я выбрал удобный редактор, который подсвечивает синтаксис языка Python.</label></p></li>
-<li><p><label><input type="checkbox">Могу запустить программу на Python на своем компьютере или в удаленной среде.</label></p></li>
+<li><label><input type="checkbox">Могу запустить программу на Python в удаленной программной среде (СП-1).</label></li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Где можно программировать удаленно?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Где можно программировать удаленно?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Основные редакторы:</p>
+<ul>
+<li><a href="https://colab.research.google.com/">Google Colab</a> - собственный ноутбук близкий к Jupyter.</li>
+<li><a href="https://replit.com/">repl.it</a> - редактор с командной строкой.</li>
+</ul>
+<p>Стоит попробовать:</p>
+<ul>
+<li><a href="https://pyodide.org/en/stable/console.html">pyodide.org</a> - в режиме интерпретатора (<code>python -i</code>).</li>
+<li><a href="https://cloud.yandex.ru/ru/services/datasphere">Yandex DataSphere</a>.</li>
+<li><a href="https://github.com/features/codespaces">Github Codespaces</a>, <a href="https://gitpod.io/">GitPod</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Дополнительно</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Я могу запустить программу на Python на локальном компьютере (СП-2).</label></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Как установить Python?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Как установить Python?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Для быстрого старта в программировании вам будет достаточно удаленной среды, но на локальном компьютере вы всегда сможете сделать немного больше.</p>
+<p>Последнюю версию яызка программирования Python можно узнать и загрузить на <a href="https://www.python.org/downloads/">официальном сайте</a>. Здесь же размещена документация и качественные обучающие материалы от создателей Python (на английском языке).</p>
+<p>С небольшим опозданием после выхода новой версии языка сборка с большим количеством библиотек доступна на сайте <a href="https://www.anaconda.com/download">Аnaconda</a>. Это предпочтительный способ установки Python для задач анализа данных и машинного обучения.</p>
+<p>Установка Python на локальный компьютер не всегда проходит гладко, будьте готовы решать возможные возникающие проблемы, которые будут отличаться на Linux, Mac и Windows.</p>
+</div>
+</div>
+</div>
+<ul class="task-list">
+<li><label><input type="checkbox">Я использую удобный редактор, который подсвечивает синтаксис языка Python (СП-3).</label></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="О текстовых редакторах">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+О текстовых редакторах
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Для работы с кодом необходим текстовый редактор, например, такой как популярный <a href="https://code.visualstudio.com/">VS Code</a>. Подойдет и <a href="https://docs.python.org/3/library/idle.html">IDLE</a>, который включен в состав языка Python, или <a href="https://www.spyder-ide.org/">Spyder</a> из сборки <a href="https://www.anaconda.com/download">Anaconda</a>. Не рекомендуем сразу устанавливать большую интегрированную среду разработки (IDE), такую как <a href="https://www.jetbrains.com/ru-ru/pycharm/">PyCharm</a>. <a href="https://jupyter.org/try-jupyter/lab/">Ноутбуки Jupyter</a> – привычный способ работы в Python для аналитиков данных.</p>
+<p>Важный момент – редактор нужен для правки текста программы, ее исполнением занимается интерпретатор языка Python, который не является частью редактора.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="алгоритмизация" class="level2">
 <h2 class="anchored" data-anchor-id="алгоритмизация">Алгоритмизация</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Я знаю виды задач, для которых подходит Python.</label></p></li>
-<li><p><label><input type="checkbox">Я представляю программу как набор инструкций или блоков инструкций.</label></p></li>
-<li><p><label><input type="checkbox">Я умею разбить новую задачу на составные части и описать шаги для ее решения.</label></p></li>
-<li><p><label><input type="checkbox">Я могу упростить сложную задачу и предложить ее минимальный вариант.</label></p></li>
+<li><p><label><input type="checkbox">Я знаю виды задач, для которых подходит Python (А-1).</label></p></li>
+<li><p><label><input type="checkbox">Я представляю программу как набор последовательных инструкций или блоков таких инструкций (А-2).</label></p></li>
+<li><p><label><input type="checkbox">Я умею разбить новую задачу на составные части и описать шаги для ее решения (A-3).</label></p></li>
+<li><p><label><input type="checkbox">Я умею приводить минимальные примеры для предлагаемых проектов и вычислений (A-4).</label></p></li>
 </ul>
 </section>
-<section id="значения-типы-переменные" class="level2">
-<h2 class="anchored" data-anchor-id="значения-типы-переменные">Значения, типы, переменные</h2>
+<section id="значения-типы-данных-переменные" class="level2">
+<h2 class="anchored" data-anchor-id="значения-типы-данных-переменные">Значения, типы данных, переменные</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Я знаю базовые типы данных:</label></p>
+<li><p><label><input type="checkbox">Я знаю базовые типы данных, операторы и методы, применимые к этим типам данных (ТД-1):</label></p>
 <ul>
 <li>целое и действительное число,</li>
 <li>строка,</li>
 <li>булевское значение (правда/ложь).</li>
 </ul></li>
-<li><p><label><input type="checkbox">Я знаю составные типы данных:</label></p>
+<li><p><label><input type="checkbox">Я знаю составные типы данных, операторы и методы, применимые к этим типам данных (ТД-2):</label></p>
 <ul>
 <li>список,</li>
 <li>кортеж,</li>
 <li>словарь.</li>
 </ul></li>
-<li><p><label><input type="checkbox">Знаю основные операторы и методы, применимые к этим типам данных.</label></p></li>
-<li><p><label><input type="checkbox">Я знаю, что такое переменные и для чего они используются в программе.</label></p></li>
+<li><p><label><input type="checkbox">Я знаю, что такое переменные и для чего они используются в программе (ТД-3).</label></p></li>
+<li><p><label><input type="checkbox">Я могу составлять выражения из значений, переменных, операторов, методов и встроенных функций (ТД-4).</label></p></li>
 </ul>
 </section>
-<section id="ход-исполнения-программы" class="level2">
-<h2 class="anchored" data-anchor-id="ход-исполнения-программы">Ход исполнения программы</h2>
+<section id="ход-исполнения-программы-control-flow" class="level2">
+<h2 class="anchored" data-anchor-id="ход-исполнения-программы-control-flow">Ход исполнения программы (control flow)</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Умею проверять условия и использовать <code>if ... else</code> для ветвления программы.</label></p></li>
-<li><p><label><input type="checkbox">Я знаю, что такое циклы <code>while</code> и <code>for</code> и как их использовать.</label></p></li>
+<li><p><label><input type="checkbox">Умею проверять условия и использовать <code>if ... else</code> для ветвления программы (CF-1).</label></p></li>
+<li><p><label><input type="checkbox">Я знаю, что такое циклы <code>while</code> и <code>for</code> и как их использовать (CF-2).</label></p></li>
 </ul>
 </section>
-<section id="ввод-и-вывод" class="level2">
-<h2 class="anchored" data-anchor-id="ввод-и-вывод">Ввод и вывод</h2>
+<section id="ввод-и-вывод-input-output" class="level2">
+<h2 class="anchored" data-anchor-id="ввод-и-вывод-input-output">Ввод и вывод (input-output)</h2>
 <ul class="task-list">
 <li><p><label><input type="checkbox">При работе с терминалом я умею:</label></p>
 <ul>
-<li>выводить текст на экран,</li>
-<li>получать текст от пользователя с клавиатуры.</li>
+<li>выводить текст на экран (IO-1),</li>
+<li>получать текст от пользователя с клавиатуры (IO-2).</li>
 </ul></li>
 <li><p><label><input type="checkbox">Я умею работать с текстовыми файлами:</label></p>
 <ul>
-<li>записывать данные в текстовый файл,</li>
-<li>читать данные из текстового файла.</li>
+<li>записывать данные в текстовый файл (IO-3),</li>
+<li>читать данные из текстового файла (IO-4).</li>
 </ul></li>
 </ul>
 </section>
 <section id="функции-классы-пакеты" class="level2">
 <h2 class="anchored" data-anchor-id="функции-классы-пакеты">Функции, классы, пакеты</h2>
 <ul class="task-list">
-<li><p><label><input type="checkbox">Я умею создавать новые функции.</label></p></li>
-<li><p><label><input type="checkbox">Мне интересно, что такое класс, объект класса, атрибуты и методы.</label></p></li>
-<li><p><label><input type="checkbox">Я умею устанавливать новые пакеты и импортировать в свой код функции и классы из этих пакетов.</label></p></li>
+<li><p><label><input type="checkbox">Я умею создавать новые функциим (ФКП-1).</label></p></li>
+<li><p><label><input type="checkbox">Мне интересно, что такое класс, объект класса, атрибуты и методы (ФКП-2).</label></p></li>
+<li><p><label><input type="checkbox">Я умею устанавливать новые пакеты и импортировать в свой код функции и классы из этих пакетов (ФКП-3).</label></p></li>
 </ul>
 </section>
-<section id="коммуникации" class="level2">
-<h2 class="anchored" data-anchor-id="коммуникации">Коммуникации</h2>
+<section id="коммуникации-и-качество-кода" class="level2">
+<h2 class="anchored" data-anchor-id="коммуникации-и-качество-кода">Коммуникации и качество кода</h2>
 <ul class="task-list">
-<li><label><input type="checkbox">Я умею сформулировать вопросы, позволяющие исправить или улучшить написанный мною код.</label></li>
+<li><p><label><input type="checkbox">Я умею сформулировать вопросы и предложения, позволяющие исправить или улучшить написанный мною код (КК-1).</label></p></li>
+<li><p><label><input type="checkbox">Я ориентируюсь на принятые нормы и правила оформления программного кода (КК-2).</label></p></li>
+</ul>
+</section>
+<section id="дополнительные-темы" class="level2">
+<h2 class="anchored" data-anchor-id="дополнительные-темы">Дополнительные темы</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Скачивание данных из сети Интернет, библиотеки <code>requests</code> и <code>httpx</code> (E-1).</label></p></li>
+<li><p><label><input type="checkbox">Cериализация данных и формат JSON (E-2).</label></p></li>
+<li><p><label><input type="checkbox">Табличные данные, датафреймы, библиотеки <code>pandas</code> и <code>polars</code> (E-3)</label></p></li>
 </ul>
 </section>
 <section id="настрой-настоящего-программиста" class="level2">
 <h2 class="anchored" data-anchor-id="настрой-настоящего-программиста">Настрой настоящего программиста</h2>
-<p>Помимо изложенных выше навыков для успеха в программировании важен положительный настрой, готовность самостоятельно находить задачи, решаемые с помощью кода, искать и совершенствовать варианты решений, совершенствовать эти решения, брать ответственность за неудачи и успехи в своей работе.</p>
-<p><strong>Логика программы</strong>. Синтаксис языка не так важен, как умение разбить задачу на части, выбрать необходимые структуры данных и способы работы с ними. Очень часто обучающиеся стараются угадать, “какой код написать”, вместо того, чтобы “какой код мне нужен”.</p>
-<p><strong>Практика.</strong> Ничто не заменит практику. Можно сколько угодно слушать лекции, смотреть ии даже понимать на чужой код, мучать вопросами ChatGPT или code-llama, но при этом не научиться программировать самому. Всячески советуем как можно раньше начать писать свой код, подбирать простые логические или бытовые задачи “не из учебника”, из которых вы затем сможете собирать более сложные решения.</p>
-<p><strong>Рефакторинг.</strong> Код, который просто работает, не всегда лучший. Качество кода, который вы пишете, измеряется тем, насколько этот код пригоден для решения новых задач, понятен ли он другим программистам, сможете ли вы сами через месяц легко объяснить, что это код делает, удобно ли такой код тестировать. Чаще всего первые программы, которые вы напишете, не будут совершенными, и они потребуют рефакторинга, или переработки кода.</p>
-<p><strong>Критерии успеха</strong>. Помните, что даже небольшой код на 5-10 строк, который вы:</p>
+<p>Помимо изложенных выше навыков для успеха в программировании важен положительный настрой, готовность самостоятельно находить проблемы и задачи, решаемые с помощью кода, искать и совершенствовать варианты решений, брать ответственность за неудачи и успехи в своей работе.</p>
+<p><strong>Логика программы</strong>. Синтаксис языка не так важен, как умение разбить задачу на части, выбрать необходимые структуры данных и способы работы с ними. Очень часто обучающиеся стараются угадать, “какой код написать”, вместо того “что должна делать программа”.</p>
+<p><strong>Практика.</strong> Ничто не заменит практику. Можно сколько угодно слушать лекции, смотреть и даже неплохо понимать на чужой код, мучать вопросами GigaChat или code-llama, но при этом не научиться программировать самому. Всячески советуем как можно раньше начать писать свой код, подбирать простые логические или даже бытовые задачи “не из учебника”, из которых вы затем сможете собирать более сложные решения.</p>
+<p><strong>Рефакторинг.</strong> Код, который заработал – это победа. Но не всякий код, который работает, самый лучший. Качество кода, который вы пишете, измеряется тем, насколько этот код пригоден для решения новых задач или сделан на один раз, понятен ли он другим программистам, сможете ли вы сами через месяц легко объяснить, что это код делает, удобно ли такой код тестировать и развивать. Чаще всего первые программы, которые вы напишете, не будут совершенными и они потребуют последующей переработки, или “рефакторинга”.</p>
+<p><strong>Критерии успеха</strong>. Помните, что даже небольшой код на 5-10 строк, который:</p>
 <ul>
-<li>придумали сами,</li>
+<li>вы придумали сами,</li>
 <li>попробовали несколько вариантов,</li>
 <li>можете объяснить, почему вы выбрали конкретный вариант,</li>
 <li>побороли возникающие ошибки,</li>
 <li>видите в работе этого кода пользу для себя или для других,</li>
 <li>хотите этот развивать или переиспользовать этот код в других проектах</li>
 </ul>
-<p>– это отличный результат в изучении программировании!</p>
+<p>– это отличный результат в изучении программирования!</p>
 
 
 </section>
